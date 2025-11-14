@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Umbraco.Community.OEmbed.Indiveo</AssemblyName>
+    <RootNamespace>Umbraco.Community.OEmbed.Indiveo</RootNamespace>
+    <Authors>Indiveo</Authors>
+    <Product>Umbraco.Community.OEmbed.Indiveo</Product>
+    <PackageId>Umbraco.Community.OEmbed.Indiveo</PackageId>
+    <Title>Umbraco.Community.OEmbed.Indiveo</Title>
+    <Description>A lightweight Umbraco CMS plugin that adds OEmbed support for Indiveo directly into the Umbraco Rich Text Editor (RTE)</Description>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageTags>umbraco;umbraco-marketplace;indiveo;oembed</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\readme.md" Pack="true" PackagePath="\" />
+    <None Include="..\images\logo.png" Pack="true" PackagePath="\" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="[13.0.0,15.0.0)" />
+  </ItemGroup>
+
+</Project>

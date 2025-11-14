@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - 'feature/umbraco'
+
+env:
+  DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+jobs:
+  dotnet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET Core SDK 8.0.x
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build solution
+        run: dotnet build
+
+      - name: Run tests
+        run: dotnet test
