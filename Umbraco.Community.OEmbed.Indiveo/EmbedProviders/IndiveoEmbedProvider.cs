@@ -19,10 +19,6 @@ namespace Umbraco.Community.OEmbed.Indiveo.EmbedProviders
 
         public override Dictionary<string, string> RequestParams => new();
 
-        [Obsolete("Use GetMarkupAsync instead. This will be removed in Umbraco 15.")]
-        public override string? GetMarkup(string url, int maxWidth = 0, int maxHeight = 0)
-            => GetMarkupAsync(url, maxWidth, maxHeight, CancellationToken.None).GetAwaiter().GetResult();
-
         public override async Task<string?> GetMarkupAsync(string url, int? maxWidth, int? maxHeight, CancellationToken cancellationToken)
         {
             var requestUrl = base.GetEmbedProviderUrl(url, maxWidth, maxHeight);
