@@ -2,7 +2,7 @@ version: '3'
 services:
   dotnet:
     container_name: dotnet
-    image: mcr.microsoft.com/dotnet/sdk:8.0-noble
+    image: mcr.microsoft.com/dotnet/sdk:9.0-noble
     working_dir: /test
     stdin_open: true
     volumes:

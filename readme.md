@@ -42,10 +42,10 @@ https://indiveo.services/embed/f1557bd7-1584-495a-aecd-827189d6a471
 
 ## 🧱 Requirements
 
-| Requirement | Version       |
-|--------------|---------------|
-| **Umbraco CMS** | 13.x – 14.x   |
-| **.NET SDK** | 8.0 |
+| Requirement | Version |
+|--------------|---------|
+| **Umbraco CMS** | 15.x    |
+| **.NET SDK** | 9.0     |
 
 ---
 
