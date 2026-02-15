@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
-    <Version>3.0.0</Version>
-    <PackageVersion>3.0.0</PackageVersion>
+    <TargetFramework>net10.0</TargetFramework>
+    <Version>4.0.0</Version>
+    <PackageVersion>4.0.0</PackageVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>Umbraco.Community.OEmbed.Indiveo</AssemblyName>
@@ -22,7 +22,7 @@
   <ItemGroup>
     <None Include="..\readme.md" Pack="true" PackagePath="\" />
     <None Include="..\images\logo.png" Pack="true" PackagePath="\" />
-    <PackageReference Include="Umbraco.Cms.Core" Version="16.0.0" />
+    <PackageReference Include="Umbraco.Cms.Core" Version="17.0.0" />
   </ItemGroup>
 
 </Project>

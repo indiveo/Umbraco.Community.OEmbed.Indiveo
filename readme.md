@@ -44,8 +44,8 @@ https://indiveo.services/embed/f1557bd7-1584-495a-aecd-827189d6a471
 
 | Requirement | Version |
 |--------------|---------|
-| **Umbraco CMS** | 16.x    |
-| **.NET SDK** | 9.0     |
+| **Umbraco CMS** | 17.x    |
+| **.NET SDK** | 10.0    |
 
 ---
 
